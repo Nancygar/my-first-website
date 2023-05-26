@@ -96,6 +96,7 @@ nav div {
   overflow: hidden;
 
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -106,14 +107,19 @@ nav div {
   background-color: rgba(0,0,0,0.55);
   min-width: 30rem;
   text-align: left;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 7px;
 }
 
 .btn-signup {
   font-size: 1.8rem;
   padding: 1.4rem 3rem;
+  align-self: center;
 
   display: flex;
   align-items: center;
+}
+
+.btn-signup span {
+  white-space: nowrap;
 }
