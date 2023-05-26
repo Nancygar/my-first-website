@@ -123,3 +123,63 @@ nav div {
 .btn-signup span {
   white-space: nowrap;
 }
+
+/* Features section */
+
+.features {
+  padding: 5rem 0;
+  font-size: 1.6rem;
+}
+
+.feature-row {
+  position: relative;
+}
+
+.feature-wrapper {
+  padding: 8rem 0;
+}
+
+.feature-content {
+  padding: 0 12%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.feature-text {
+  flex-basis: 50%;
+}
+
+.feature-text h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.feature-text p {
+  font-size: 1.8rem;
+}
+
+.feature-image {
+  flex-basis: 50%;
+  padding: 0 2rem;
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.feature-separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(30, 30, 30);
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
