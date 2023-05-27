@@ -1,15 +1,17 @@
-// Select all the items
-const items = document.querySelectorAll('.item');
+const items = document.querySelectorAll(".item");
 
 items.forEach((item) => {
-  item.addEventListener('click', () => {
-    // Toggle the hidden box
-    items.forEach((item) => {
-      if (item.classList.contains('active')) {
-        item.classList.remove('active');
-      }
-    })
+  item.addEventListener("click", (e) => {
+    const itemClicked = e.currentTarget;
+    const itemOpen = document.querySelector(".active");
 
-    item.classList.toggle('active');
-  })
+    if (itemClicked === itemOpen) {
+      itemClicked.classList.remove("active");
+    } else {
+      if (itemOpen) {
+        itemOpen.classList.remove("active");
+      }
+      itemClicked.classList.add("active");
+    }
+  });
 });
