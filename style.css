@@ -6,7 +6,7 @@
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@ nav {
   cursor: pointer;
 }
 
-nav div {
+.nav-btn-wrapper {
   display: flex;
   gap: 1rem;
 }
@@ -274,7 +274,7 @@ nav div {
 /* CTA */
 
 .cta-section {
-  padding: 3rem 0;
+  padding: 3rem 0 5rem 0;
 }
 
 .cta-wrapper {
