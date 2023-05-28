@@ -100,6 +100,7 @@ body {
 .email-signup {
   border-radius: 4px;
   overflow: hidden;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -111,19 +112,20 @@ body {
   font-size: 1.4rem;
   border: 1px solid rgba(100, 100, 100, 0.8);
   background-color: rgba(0, 0, 0, 0.55);
-  min-width: 30rem;
   text-align: left;
   padding: 1.6rem;
   border-radius: 7px;
+
+  flex: 2 1 auto;
 }
 
 .btn-signup {
   font-size: 1.8rem;
   padding: 1.4rem 3rem;
-  align-self: center;
 
   display: flex;
   align-items: center;
+  flex: 0 1 auto;
 }
 
 .btn-signup span {
@@ -356,4 +358,62 @@ body {
 
 .copy {
   font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+/* Less than 1280px in em */
+@media (max-width: 80em) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Less than 960px in em */
+@media (max-width: 60em) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Less that 600 px in em */
+@media (max-width: 37.5em) {
+  .language-btn span {
+    display: none;
+  }
+
+  .header-content {
+    width: 70%;
+  }
+
+  .email-signup {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .email-signup input {
+    align-self: stretch;
+  }
+
+  .feature-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Less than 400px in em */
+
+@media (max-width: 25em) {
+  .nav {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
 }
